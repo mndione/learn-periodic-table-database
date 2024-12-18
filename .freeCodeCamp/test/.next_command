@@ -1,0 +1,200 @@
+psql --username=freecodecamp --dbname=periodic_table
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+mkdir periodic_table
+cd periodic_table/
+git init
+ls --color=auto -a
+git checkout -b main
+git branch
+git branch
+ls --color=auto -a
+ls --color=auto .git
+touch element.sh
+chmod +x element.sh
+git status
+git add element.sh
+git commit -m "Initail commit"
+./element.sh
+./element.sh 2
+./element.sh 2
+./element.sh 2
+./element.sh 2
+./element.sh 2
+clear
+./element.sh 2
+git status
+git add element.sh
+git commit -m "Retrieve Element from Database"
+clear
+./element.sh 2
+./element.sh 2
+./element.sh 2
+./element.sh 2
+./element.sh 2
+./element.sh 2
+./element.sh 2
+./element.sh 1000
+git add element.sh
+git commit -m "Adding function dispaly"
+git log --oneline
+./element.sh 10000
+git add element.sh
+git commit -m "Adding Element NOT FOUND MSG"
+git rebase --interactive
+git rebase --interactive
+git rebase --interactive -5
+git rebase --interactive --root
+git log --oneline
+git rebase --interactive --root
+git log --oneline
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
+export GIT_EDITOR=/usr/bin/nano
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+PATH="$HOME/.local/bin:$PATH"
+[ -e /home/gitpod/.nix-profile/etc/profile.d/nix.sh ]
+. /home/gitpod/.nix-profile/etc/profile.d/nix.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]]
+source "$HOME/.rvm/scripts/rvm"
+[[ -n $SSH_CONNECTION ]]
+'/ide/node' -p '"b54b46445d76" + JSON.stringify(process.env) + "b54b46445d76"'
+export GIT_EDITOR=/usr/bin/nano
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+cd periodic_table/
+ls --color=auto -a
+git status
+psql --username=freecodecamp --dbname=periodic_table
+psql --username=freecodecamp --dbname=periodic_table -f periodic_table.sql
+psql --username=freecodecamp --dbname=periodic_table
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+./element.sh 10000
+__vsc_prompt_cmd_original
+./element.sh 1000
+./element.sh 1
+./element.sh
+git log --oneline
+git status
+git add element.sh
+git commit -m "feat: deleting type from properties"
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
+git status
+git add periodic_table.sql
+git commit -m "feat: Adding sql dump to git"
+git status
+git log --oneline
+git branch
+./element.sh 1000
+./element.sh 1
+./element.sh H
+find bash
+find -name bash
+find / -name bash
+./element.sh 1
+./element.sh H
+./element.sh 1
+./element.sh 2
+./element.sh Ne
+./element.sh 2
+./element.sh Helium
+git rebase --interactive HEAD~6
+git rebase --interactive --root
+git status
+git add element
+git add element.sh
+git commit -m "fix: conditionnal sql request on arg type"
+git rebase --interactive --root
+git log --oneline
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
+git status
+git add periodic_table.sql
+git commit -m "fix: redo sql dump"
